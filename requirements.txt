@@ -1,0 +1,9 @@
+python-dotenv==1.0.1
+agency-swarm==0.4.1
+crewai
+streamlit
+langchain_groq
+flask
+flask_cors
+gunicorn
+pydantic

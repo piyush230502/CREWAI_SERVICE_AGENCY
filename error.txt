@@ -1,0 +1,11 @@
+error 1 : litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=gemma2-9b-it
+Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
+
+solution:
+ import litellm
+litellm.set_verbose = True
+
+solution 2:     class Config:
+        arbitrary_types_allowed = True  # This fixes the issue
+
+solution 3: set llm providers like that "groq/gemma-9b-it"
